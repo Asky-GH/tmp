@@ -32,15 +32,15 @@ public class MainTest {
         checkParser("/input/input_1.csv", "/output/output_1.csv");
     }
 
-    @Test
-    void testInput2() {
-        checkParser("/input/input_2.csv", "/output/output_2.csv");
-    }
+//    @Test
+//    void testInput2() {
+//        checkParser("/input/input_2.csv", "/output/output_2.csv");
+//    }
 
-    @Test
-    void testInput3() {
-        checkParser("/input/input_3.csv", "/output/output_3.csv");
-    }
+//    @Test
+//    void testInput3() {
+//        checkParser("/input/input_3.csv", "/output/output_3.csv");
+//    }
 
     @SneakyThrows
     private void checkParser(String sourcePath, String expectedFilePath) {
