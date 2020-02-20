@@ -27,15 +27,15 @@ public class MainTest {
     @Autowired
     private CsvParserService csvParserService;
 
-//    @Test
-//    void testInput1() {
-//        checkParser("/input/input_1.csv", "/output/output_1.csv");
-//    }
-//
-//    @Test
-//    void testInput2() {
-//        checkParser("/input/input_2.csv", "/output/output_2.csv");
-//    }
+    @Test
+    void testInput1() {
+        checkParser("/input/input_1.csv", "/output/output_1.csv");
+    }
+
+    @Test
+    void testInput2() {
+        checkParser("/input/input_2.csv", "/output/output_2.csv");
+    }
 
     @Test
     void testInput3() {

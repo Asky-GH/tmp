@@ -12,7 +12,10 @@ public class MainConfiguration {
 
     @Bean
     public CsvParserService csvParserService() {
-        return new CsvParserServiceImpl(gsonEncoder(), gsonDecoder());
+        return CsvParserServiceImpl.builder()
+                .gsonEncoder(gsonEncoder())
+                .gsonDecoder(gsonDecoder())
+                .build();
     }
 
     @Bean
@@ -24,4 +27,5 @@ public class MainConfiguration {
     public GsonDecoder gsonDecoder() {
         return new GsonDecoder();
     }
+
 }
